@@ -1,5 +1,5 @@
 def line(array)
-  if array == 0
+  if array.size == 0
     puts "The line is currently empty."
   else
     string = "The line is currently:"
