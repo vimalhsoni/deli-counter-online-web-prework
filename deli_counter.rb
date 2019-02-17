@@ -9,3 +9,9 @@ def line(array)
     puts string
   end
 end
+
+def take_a_number(array,person)
+  array.push(person)
+  array.each_with_index do |person, index|
+    puts "Welcome, #{person}. You are number #{index + 1} in line."
+end
