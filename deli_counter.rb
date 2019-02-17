@@ -8,3 +8,4 @@ def line(array)
     end
     puts string
   end
+end
