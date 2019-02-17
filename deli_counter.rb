@@ -12,16 +12,18 @@ end
 
 def take_a_number(array,person)
   array.push(person)
-  array.each_with_index do |customer, index|
-    puts "Welcome, #{customer}. You are number #{index + 1} in line."
+  position = array.index(person)
+    puts "Welcome, #{person}. You are number #{position + 1} in line."
 end
 end
 
 def now_serving(array)
-  if array.size > 0
-  currently_serving = array.pop
-  puts "Currently serving #{currently_serving}."
-elsif array.size == 0
+  lead_person = array.shift
+  person = array.size
+  if person > 0
+    puts "Currently serving #{lead_person}."
+    #person -= 1
+  else
   puts "There is nobody waiting to be served!"
 end
 end
