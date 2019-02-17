@@ -21,7 +21,7 @@ def now_serving(array)
   person = array.size
   if person > 0
     puts "Currently serving #{lead_person}."
-    person -= 1
+    #person -= 1
   else
   puts "There is nobody waiting to be served!"
 end
