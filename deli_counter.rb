@@ -15,7 +15,6 @@ def take_a_number(array,person)
   position = array.index(person)
     puts "Welcome, #{person}. You are number #{position + 1} in line."
 end
-end
 
 def now_serving(array)
   lead_person = array.shift
