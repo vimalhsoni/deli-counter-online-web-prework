@@ -19,7 +19,7 @@ end
 
 def now_serving(array)
   if array.size > 0
-  currently_serving = array.first
+  currently_serving = array.pop
   puts "Currently serving #{currently_serving}."
 elsif array.size == 0
   puts "There is nobody waiting to be served!"
